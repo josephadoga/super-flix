@@ -15,7 +15,7 @@ function onEvent(event, sel, callback) {
 }
 
 export function print(...args) {
-    args.forEach(element => {
+    args.forEach(element => {(
         console.log(element);
-    }
+    });
 }
