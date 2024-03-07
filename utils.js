@@ -2,8 +2,8 @@
 
 // Utility functions
 
-export function getElement(selector, scope = document) {
-    return scope.getElementById(selector);
+export function getElement(selector, parent = document) {
+    return parent.getElementById(selector);
 }
 
 function select(selector, parent = document) {
