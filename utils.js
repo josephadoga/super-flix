@@ -2,8 +2,8 @@
 
 // Utility functions
 
-export function getElementById(sel, scope = document) {
-    return scope.getElementById(sel);
+export function getElement(selector, scope = document) {
+    return parent.getElementById(selector);
 }
 
 function select(sel, parent = document) {
@@ -15,7 +15,7 @@ function onEvent(event, sel, callback) {
 }
 
 export function print(...args) {
-    args.forEach(element => {(
+    args.forEach(element => {
         console.log(element);
     });
 }
