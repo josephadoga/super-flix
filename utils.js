@@ -2,14 +2,20 @@
 
 // Utility functions
 
-export function getElement(selector, scope = document) {
-    return scope.getElementById(selector);
+export function getElementById(sel, scope = document) {
+    return scope.getElementById(sel);
 }
 
-function select(selector, parent = document) {
-    return parent.querySelector(selector);
+function select(sel, parent = document) {
+    return parent.querySelector(sel);
 }
 
-function onEvent(event, selector, callback) {
+function onEvent(event, sel, callback) {
     return selector.addEventListener(event, callback);
+}
+
+export function print(...args) {
+    args.forEach(element => {
+        console.log(element);
+    }
 }
